@@ -1,0 +1,82 @@
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+</head>
+<body>
+
+
+<form action="https://broan--DEV3.cs24.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D190000009MfZ">
+<input type=hidden name="retURL" value="http://www.broan.com">
+
+
+
+First Name:<input  id="00N190000030GX4" maxlength="255" name="00N190000030GX4" size="20" type="text" /><br>
+
+Middle Name:<input  id="00N190000030GX9" maxlength="255" name="00N190000030GX9" size="20" type="text" /><br>
+
+Last Name:<input  id="00N190000030GXE" maxlength="255" name="00N190000030GXE" size="20" type="text" /><br>
+
+Street Address:<input  id="00N190000030Gvk" maxlength="255" name="00N190000030Gvk" size="20" type="text" /><br>
+
+Apt. No:<input  id="00N190000030GXJ" maxlength="255" name="00N190000030GXJ" size="20" type="text" /><br>
+
+City Text:<input  id="00N190000030Gcx" maxlength="255" name="00N190000030Gcx" size="20" type="text" /><br>
+
+State Text:<input  id="00N190000030Gd2" maxlength="255" name="00N190000030Gd2" size="20" type="text" /><br>
+
+Zip Code Text:<input  id="00N190000030GfS" maxlength="255" name="00N190000030GfS" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+Type of Inquiry:<select  id="00N190000030GfX" name="00N190000030GfX" title="Type of Inquiry"><option value="">--None--</option><option value="Install">Install</option>
+<option value="Parts">Parts</option>
+<option value="Repair">Repair</option>
+<option value="Specifications">Specifications</option>
+<option value="Troubleshoot">Troubleshoot</option>
+<option value="Warranty">Warranty</option>
+<option value="Order">Order</option>
+<option value="Other">Other</option>
+</select><br>
+
+Brand:<select  id="00N19000002nJiz" name="00N19000002nJiz" title="Brand"><option value="">--None--</option><option value="Broan">Broan</option>
+<option value="Nu-Tone">Nu-Tone</option>
+<option value="Best">Best</option>
+</select><br>
+
+Product Type:<select  id="00N19000002nJj4" name="00N19000002nJj4" title="Product Type"><option value="">--None--</option><option value="Bathroom Ventilation Fans">Bathroom Ventilation Fans</option>
+<option value="Range Hoods">Range Hoods</option>
+<option value="Central Vacuum Systems">Central Vacuum Systems</option>
+<option value="Intercom">Intercom</option>
+<option value="Fresh Air Systems">Fresh Air Systems</option>
+<option value="Heaters">Heaters</option>
+<option value="Door Chimes">Door Chimes</option>
+<option value="Smart Home">Smart Home</option>
+<option value="Other">Other</option>
+</select><br>
+
+Model Number/Series #:<input  id="00N190000030Gfc" maxlength="255" name="00N190000030Gfc" size="20" type="text" /><br>
+
+Serial Number / Date Code:<input  id="00N19000002lbke" maxlength="100" name="00N19000002lbke" size="20" type="text" /><br>
+
+Date of Purchase:<span class="dateInput dateOnlyInput"><input  id="00N19000002lbkj" name="00N19000002lbkj" size="12" type="text" /></span><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<input type="hidden"  id="00N19000003DSJg" name="00N19000003DSJg" title="Web-to-Case Source" value="Broan">
+</input><br>
+
+
+<input type="hidden"  id="external" name="external" value="1" /><br>
+
+<input type="submit" name="submit">
+
+
+</form>
+</body>
+</html>
