@@ -7,10 +7,7 @@
 <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
 <input type=hidden name="oid" value="00D550000000OVR">
-<input type=hidden name="retURL" value="https://www.mottomortgage.com/">
-<input type=hidden name="DNC__c" value="No">
-
-
+<input type=hidden name="retURL" value="http://mottomortgage.com">
 I&#39;m interested in:<select  id="00N55000000xMYF" name="00N55000000xMYF" title="I&#39;m interested in"><option value="">--None--</option><option value="Owning a Franchise">Owning a Franchise</option>
 <option value="Making a media inquiry">Making a media inquiry</option>
 <option value="Becoming a Loan Originator with Motto">Becoming a Loan Originator with Motto</option>
@@ -20,7 +17,7 @@ I&#39;m interested in:<select  id="00N55000000xMYF" name="00N55000000xMYF" title
 
 <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
-ISP Email:<input  id="00N550000012SBZ" maxlength="100" name="00N550000012SBZ" size="20" type="text" /><br>
+ISP Email:<label for="email"></label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
 <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
@@ -90,16 +87,14 @@ How did you hear about us?:<select  id="00N550000012btQ" name="00N550000012btQ" 
 <option value="Other">Other</option>
 </select><br>
 
-Notes:<textarea  id="00N550000012btf" name="00N550000012btf" rows="3" type="text" wrap="soft"></textarea><br>
+Notes:<label for="description">Description</label><textarea name="description"></textarea><br>
 
-<input type=hidden <select  id="00N550000012SAq" name="00N550000012SAq" title="Motto Source” value="MottoMortgage.com"</select><br>
+<input type=hidden <select  id="00N550000012SAq" name="00N550000012SAq" title="Motto Source" value="MottoMortgage.com"</select><br>
 
 <input type=hidden <select  id="00N550000012SBU" name="00N550000012SBU" title="Lead Type" value="Motto Franchise"</select><br>
 
-<input type=hidden <select  id="00N550000012SB5" name="00N550000012SB5" title="DNC” value="No"</select><br>
+<input type=hidden <select  id="00N550000012SB5" name="00N550000012SB5" title="DNC" value="No"</select><br>
 
-<input type="hidden" id="status" name="status" title="Lead Status" value="Open">
-</input>
 
 <input type="submit" name="submit">
 
