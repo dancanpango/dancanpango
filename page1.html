@@ -1,104 +1,67 @@
-<html>
-<head>
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-</head>
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #0079c1;
+		font-family: "Salesforce Sans", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #0079c1;
+	}
+	@font-face {
+		font-family: 'Salesforce Sans';
+		src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
+		url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
+	}
+</style>
 
-<body>
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-<input type=hidden name="oid" value="00D550000000OVR">
-<input type=hidden name="retURL" value="http://mottomortgage.com">
-I&#39;m interested in:<select  id="00N55000000xMYF" name="00N55000000xMYF" title="I&#39;m interested in"><option value="">--None--</option><option value="Owning a Franchise">Owning a Franchise</option>
-<option value="Making a media inquiry">Making a media inquiry</option>
-<option value="Becoming a Loan Originator with Motto">Becoming a Loan Originator with Motto</option>
-</select><br>
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+		// Settings for Live Agent
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
-ISP Email:<label for="email"></label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+		embedded_svc.init(
+			'https://callrevu--Canpango.cs92.my.salesforce.com',
+			'https://canpango-fixthephone.cs92.force.com/datacollection',
+			gslbBaseURL,
+			'00D3F0000009L8x',
+			'Live_Agent',
+			{
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-iad.salesforceliveagent.com/content',
+				deploymentId: '5721N000000g6x9',
+				buttonId: '5731N000000g6rF',
+				baseLiveAgentURL: 'https://d.la2-c1cs-iad.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3F0000008ONoUAM_16adce26069',
+				isOfflineSupportEnabled: true
+			}
+		);
+	};
 
-City of Interest:<input  id="00N550000012S9x" maxlength="125" name="00N550000012S9x" size="20" type="text" /><br>
-
-State of Interest:<select  id="00N55000000xMYA" name="00N55000000xMYA" title="State of Interest"><option value="">--None--</option><option value="AL">AL</option>
-<option value="AK">AK</option>
-<option value="AZ">AZ</option>
-<option value="AR">AR</option>
-<option value="CA">CA</option>
-<option value="CO">CO</option>
-<option value="CT">CT</option>
-<option value="DE">DE</option>
-<option value="DC">DC</option>
-<option value="FL">FL</option>
-<option value="GA">GA</option>
-<option value="HI">HI</option>
-<option value="ID">ID</option>
-<option value="IL">IL</option>
-<option value="IN">IN</option>
-<option value="IA">IA</option>
-<option value="KS">KS</option>
-<option value="KY">KY</option>
-<option value="LA">LA</option>
-<option value="ME">ME</option>
-<option value="MD">MD</option>
-<option value="MA">MA</option>
-<option value="MI">MI</option>
-<option value="MN">MN</option>
-<option value="MS">MS</option>
-<option value="MO">MO</option>
-<option value="MT">MT</option>
-<option value="NE">NE</option>
-<option value="NV">NV</option>
-<option value="NH">NH</option>
-<option value="NJ">NJ</option>
-<option value="NM">NM</option>
-<option value="NY">NY</option>
-<option value="NC">NC</option>
-<option value="ND">ND</option>
-<option value="OH">OH</option>
-<option value="OK">OK</option>
-<option value="OR">OR</option>
-<option value="PA">PA</option>
-<option value="PR">PR</option>
-<option value="RI">RI</option>
-<option value="SC">SC</option>
-<option value="SD">SD</option>
-<option value="TN">TN</option>
-<option value="TX">TX</option>
-<option value="UT">UT</option>
-<option value="VT">VT</option>
-<option value="VI">VI</option>
-<option value="VA">VA</option>
-<option value="WA">WA</option>
-<option value="WV">WV</option>
-<option value="WI">WI</option>
-<option value="WY">WY</option>
-</select><br>
-
-How did you hear about us?:<select  id="00N550000012btQ" name="00N550000012btQ" title="How did you hear about us?"><option value="">--None--</option><option value="Referral">Referral</option>
-<option value="Internet Search">Internet Search</option>
-<option value="Advertisement">Advertisement</option>
-<option value="Social Media">Social Media</option>
-<option value="Press Coverage">Press Coverage</option>
-<option value="Industry Event/Publication">Industry Event/Publication</option>
-<option value="Other">Other</option>
-</select><br>
-
-Notes:<label for="description">Description</label><textarea name="description"></textarea><br>
-
-<input type=hidden <select  id="00N550000012SAq" name="00N550000012SAq" title="Motto Source" value="MottoMortgage.com"</select><br>
-
-<input type=hidden <select  id="00N550000012SBU" name="00N550000012SBU" title="Lead Type" value="Motto Franchise"</select><br>
-
-<input type=hidden <select  id="00N550000012SB5" name="00N550000012SB5" title="DNC" value="No"</select><br>
-
-
-<input type="submit" name="submit">
-
-
-</form>
-  </body>
-  </html>
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://callrevu--Canpango.cs92.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
